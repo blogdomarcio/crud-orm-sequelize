@@ -9,7 +9,7 @@ const pessoas = require('./routes/pessoas')
 
 const model = require('./models/index')
 
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: true }))
 
 app.use(express.static('public'))
 

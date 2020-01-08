@@ -1,0 +1,34 @@
+<%- include('../partials/header'); -%>
+
+
+<div class="container">
+  
+    
+<h3>Editar - Pessoa</h1>
+    
+    <p><a href="/pessoas" class="btn btn-info">Voltar</a></p>
+    <hr>
+
+    <form method="POST">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nome</label>
+          <input type="text" class="form-control" id="nome" name="nome" value="<%= pessoa.nome %>" aria-describedby="emailHelp">
+          <small id="emailHelp" class="form-text text-muted">Digite o nome da Pessoa.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Cargo</label>
+          <input type="text" class="form-control" id="cargo" name="cargo" aria-describedby="emailHelp" value="<%= pessoa.cargo %>">
+          <small id="emailHelp" class="form-text text-muted">Digite o cargo da Pessoa.</small>
+        </div>
+        
+        
+        <button type="submit" class="btn btn-primary">Salvar</button>
+      </form>
+
+ 
+
+</div>
+
+<%- include('../partials/footer'); -%>
+
